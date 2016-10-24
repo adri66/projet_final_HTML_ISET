@@ -3,6 +3,7 @@
   width: 1080px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #6bb4ff;
 }
 header
 {
@@ -27,7 +28,7 @@ header
   background-color: #144c75;
   text-align: center;
 }
-#menu li:hover
+#menu a:hover
 {
   background-color: #436b88;
 }
@@ -41,4 +42,23 @@ header
 #menu, #menu a
 {
   color: #46b1ff;
+}
+#imageIntro
+{
+  width: 100px;
+  float: right;
+}
+#imageIntro:active
+{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 90%;
+  width: auto;
 }
