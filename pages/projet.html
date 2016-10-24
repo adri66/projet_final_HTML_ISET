@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/stylSheet.css">
+    <title>DIYElectronics - Accueille</title>
+  </head>
+  <body>
+<div id="container">
+  <header>
+    <div id="logo">DIYElectronics</div>
+  </header>
+  <nav id="menu">
+    <ul>
+      <li><a href="#" >Accueile</a> |</li>
+      <li><a href="../pages/projet.html" >Projet</a> |</li>
+      <li><a href="#" >Contact</a></li>
+    </ul>
+  </nav>
+  <h1>Horloge a tube nixie</h1>
+  <h2>Présentation</h2>
+  Mon horloge a tube nixie<sup>1</sup> est composée de 6 tube IN-8 Ressemblant a ceci :<br />
+  <img src="../picsVANDAMME/tubeNixie.jpg" alt="tube IN-8" height="100px"/>
+  <br />Cette horloge au look <a href="#bottom" title="def">vintage</a> <sup>2</sup> aura pour but d'afficher l'heur et la date de façon intermitante
+  <h2>Caractèristique</h2>
+  <p>Doté de 6 tube <strong>nixie IN-8</strong>, l'horoge affiche l'heur et la date au format hh:mm:ss et DD/MM/YY<br />
+  En desous de chaque tube est logé une <i>LED<sup>3</sup> RGB</i> permettant d'iluminé  avec 8 couleurs diferente ou
+  avec une animation de couleur (fondu de couleurs) gerer avec un <a href="https://www.youtube.com/watch?v=0xhq7_BiZXk">PWM<sup>4</sup> logiciel</a><br />
+  Il est possible de la configurer grace au 3 bouton poussoir (conffiguration, +, -)</p>
+  <h2>Utilisation</h2>
+  <ul>
+    <li><h3>Utilisation des <a href="#bottom" title="def">LED</a> RGB</h3></li>
+    <p>Si vous souhaiter avoir un fondu de couleur, appuyer 5sec sur le bouton configuration<br />
+    Si vous voulez avoir une des 8 couleurs, appuyez sur les bouton + et -</p>
+    <li><h3>Réglage de la date et de l'heur</h3></li>
+    <p>Appuyez sur le bouton configuration, vous passerez automatiquement en mode réglage heur et date<br />
+    Les digits qui clignote, sont seu en cours de réglage.<br />
+    Voici l'orde de réglage :<br />
+    <ol>
+      <li>secondes</li>
+      <li>minutes</li>
+      <li>heurs</li>
+      <li>jours</li>
+      <li>mois</li>
+      <li>années</li>
+    </ol></p>
+  </ul>
+  <h2>Rendu final</h2>
+  Voici le rendu final de l'horloge :<br />
+  <img src="../picsVANDAMME/nixie.jpg" width="100%">
+  <video src="../nixie.mp4" controls="true">
+  Votre navigateur ne suporte pas les <code> video HTML5<br />
+  <iframe width="900" height="506" src="https://www.youtube.com/embed/cg0ZUgR7y0Y" frameborder="0" allowfullscreen></iframe>
+  </video>
+  <dl id="bottom">
+  <dt><sup>1</sup>tube nixie</dt><dd>Un <a href="#bottom" title="def">tube nixie</a> est un composant électronique utilisé pour l'affichage de chiffres et d'autres informations. Il est constitué d'un tube de verre qui contient une anode en fil grillagé, et plusieurs cathodes qui ont la forme de symboles à afficher. Le tube est rempli d'un gaz à basse pression, d'habitude composé principalement de néon et souvent un peu de mercure et/ou d'argon (on parle de mélange de Penning). Lorsqu'on applique une tension sur une cathode, celle-ci s'entoure d'un halo orange dû aux décharges dans le gaz.</dd>
+  <dt><sup>2</sup>vintage</dt><dd>mot anglais signifiant ancien, d'époque</dd>
+  <dt><sup>3</sup>LED</dt><dd>Une diode électroluminescente (DEL en français, ou LED, de anglais : Light-Emitting Diode), est un dispositif opto-électronique capable d’émettre de la lumière lorsqu’il est parcouru par un courant électrique. Une diode électroluminescente ne laisse passer le courant électrique que dans un seul sens (le sens passant, comme une diode classique, l'inverse étant le sens bloquant) et produit un rayonnement monochromatique ou polychromatique non cohérent à partir de la conversion d’énergie électrique lorsqu'un courant la traverse.</dd>
+  <dt><sup>4</sup>PWM</dt><dd>La modulation de largeur d'impulsions (MLI ; en anglais : Pulse Width Modulation, soit <a href="#bottom" title="def">PWM</a> ), est une technique couramment utilisée pour synthétiser des signaux continus à l'aide de circuits à fonctionnement tout ou rien, ou plus généralement à états discrets.</dd>
+  </dl>
+  <a href="#container">TOP</a>
+  <footer>
+  Réaliser et coder par VAN DAMME Adrien<br />
+  DIYElectronics©2016<br />
+  <a href="">Contact</a>
+  </footer>
+</div>
+</body>
