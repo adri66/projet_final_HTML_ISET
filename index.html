@@ -3,29 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./css/stylSheet.css">
+    <script type="text/javascript" src="./script/jquery.js" ></script>
+    <script type="text/javascript" src="./script/script.js" ></script>
     <title>DIYElectronics - Accueille</title>
   </head>
   <body>
-    <div id="container">
+    <div class="container">
       <header>
-        <div id="logo">DIYElectronics</div>
+        <div class="logo">DIYElectronics</div>
       </header>
-      <nav id="menu">
-        <ul>
-          <li><a href="#" >Accueile</a> |</li>
-          <li><a href="./pages/projet.html" >Projet</a> |</li>
-          <li><a href="#" >Contact</a></li>
-        </ul>
-      </nav>
-      <section id="intro">
+      <div class="menu-container">
+          <ul class="menu">
+            <li><a href="#" >Accueile</a></li>
+            <li><a href="./pages/projet.html" >Projet</a>
+              <ul>
+                <li><a href="#">AVR-C</a></li>
+                <li><a href="#">Electronic</a></li>
+                <li><a href="#">Informatique</a></li>
+                <li><a href="#">Arduino</a></li>
+              </ul>
+            </li>
+            <li><a href="#" >Contact</a></li>
+          </ul>
+    	</div>
+      <section class="intro">
         <div class="blockTitle">Description du site</div>
-        <p><img src="./images/nixie.jpg" id="imageIntro" title="Click long pour voir en grand" alt="Nixie clock"/>
+        <p><img src="./images/nixie.jpg" class="imageIntro" title="Click long pour voir en grand" alt="Nixie clock"/>
           DIYElectronics est un site rédiger par des passioné d'élecronique et d'infomatique.<br />
           On parlera sur se site de microcontroleur (ATMEGA328P, ATMEGA8, ...), d'arduino, de raspbery, etc
           Tous se qui touche de près ou de loins l'électronique et/ou l'informatique poura être vus.<br />
           Si contre vous verrez un de nos projet, l'horloge a tube nixie !</p>
       </section>
-      <section id="lastProject">
+      <section class="lastProject">
         <div class="blockTitle">Dernier projet</div>
         <h3>Horloge à tube nixie</h3>
         <p>Cette horloge à style vintage est doté de 6 tube nixie IN-8 pouvant afficger la date ou l'heur.<br />
