@@ -12,4 +12,19 @@ $(document).ready(function() {
         $(this).removeClass('current');
     });
     $("ul.menu li:has(ul) a:first").addClass('with-child');
+
+
+
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+          $('#go-top').fadeIn();
+      } else {
+          $('#go-top').fadeOut();
+      }
+    });
+    $('#go-top').click(function(){
+      //$('#go-top').fadeOut();
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
 });
