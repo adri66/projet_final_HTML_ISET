@@ -7,7 +7,7 @@ body {
     width: 1080px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #6bb4ff;
+    background-color: #0CC0E8;
     box-shadow: 0px 0px 70px 50px rgba(119, 119, 119, 0.7);
     -moz-box-shadow: 0px 0px 70px 50px rgba(119, 119, 119, 0.7);
     -webkit-box-shadow: 0px 0px 70px 50px rgba(119, 119, 119, 0.7);
@@ -18,16 +18,14 @@ header {
     height: 200px;
     font-weight: bold;
     font-family: inherit;
-
-
 }
 
 .logo {
-    position: absolute;
-    left: 500px;
+    position: relative;
+    left: 50px;
     top: 100px;
     font-size: 3em;
-    color: #58ffeb;
+    color: #0DFFEA;
 }
 
 .imageIntro {
@@ -53,67 +51,14 @@ header {
     width: 100%;
     font-size: 25px;
     text-align: center;
-    background-color: #42709e;
+    background-color: #008DFF;
     font-weight: bold;
 }
-
-
-/* MENU */
-/* Grandement inspriré de : http://www.jqueryscript.net/menu/Minimalist-Dropdown-Navigation-Menu-Plugin-With-jQuery.html*/
-
-.menu-container {
-    width: 1080px;
-    height: 50px;
-    background: #693D3D;
-    font-family: corbel;
-    text-align: center;
+dl{
+  background-color: #008DFF
 }
-ul.menu{
-  margin-top: 0;
-  margin-bottom: 0;
-  display: inline-block;
-}
-ul.menu li {
-    float: left;
-    padding: 15px;
-    list-style: none;
-    width: 80px;
-    height: 20px;
-    text-align: left;
-}
-ul.menu li a {
-    color: #fff;
-    text-decoration: none;
-}
-ul.menu li:hover {
-    color: #fff;
-    text-decoration: none;
-}
-
-/*element caché*/
-ul.menu ul {
-    background: #46211A;
-    position: relative;
-    top: 15px;
-    display: none;
-    width: 70px;
-    right: 15px;
-    margin-top: -5px; /*evite des entrée sortie dans le script*/
-}
-ul.menu ul li {
-    float: none;
-    position: relative;
-    left: -40px;
-    padding: 5px 15px 5px 15px;
-    border-top: 1px solid #fff;
-    /*width:150px;*/
-}
-
-.current {
-    background-color: #46211A;
-}
-
-.with-child::after {
-    content: '\25be';
-    color: #ffffff;
+footer{
+  background-color: #0B45D4;
+  color: #4CAFFF;
+  text-align: center;
 }

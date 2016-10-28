@@ -3,20 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../css/stylSheet.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script type="text/javascript" src="../script/jquery.js" ></script>
+    <script type="text/javascript" src="../script/script.js" ></script>
     <title>DIYElectronics - Accueille</title>
   </head>
   <body>
-<div id="container">
-  <header>
-    <div id="logo">DIYElectronics</div>
-  </header>
-  <nav id="menu">
-    <ul>
-      <li><a href="../index.html" >Accueile</a> |</li>
-      <li><a href="#" >Projet</a> |</li>
-      <li><a href="#" >Contact</a></li>
-    </ul>
-  </nav>
+    <div class="container">
+      <header>
+        <div class="logo">DIYElectronics</div>
+      </header>
+      <nav class="menu-container">
+          <ul class="menu">
+            <li><a href="#" >Accueile</a></li>
+            <li><a href="../pages/projet.html" >Projet</a>
+              <ul>
+                <li><a href="#">AVR-C</a></li>
+                <li><a href="#">Electronic</a></li>
+                <li><a href="#">Informatique</a></li>
+                <li><a href="#">Arduino</a></li>
+              </ul>
+            </li>
+            <li><a href="#" >Contact</a></li>
+          </ul>
+    	</nav>
   <h1>Horloge a tube nixie</h1>
   <h2>Présentation</h2>
   Mon horloge a tube nixie<sup>1</sup> est composée de 6 tube IN-8 Ressemblant a ceci :<br />
@@ -48,10 +58,7 @@
   <h2>Rendu final</h2>
   Voici le rendu final de l'horloge :<br />
   <img src="../images/nixie.jpg" width="100%">
-  <video src="../nixie.mp4" controls="true">
-    Votre navigateur ne suporte pas les <code> video HTML5<br />
     <iframe width="900" height="506" src="https://www.youtube.com/embed/cg0ZUgR7y0Y" frameborder="0" allowfullscreen></iframe>
-  </video>
   <dl id="bottom">
     <dt><sup>1</sup>tube nixie</dt><dd>Un <a href="#bottom" title="def">tube nixie</a> est un composant électronique utilisé pour l'affichage de chiffres et d'autres informations. Il est constitué d'un tube de verre qui contient une anode en fil grillagé, et plusieurs cathodes qui ont la forme de symboles à afficher. Le tube est rempli d'un gaz à basse pression, d'habitude composé principalement de néon et souvent un peu de mercure et/ou d'argon (on parle de mélange de Penning). Lorsqu'on applique une tension sur une cathode, celle-ci s'entoure d'un halo orange dû aux décharges dans le gaz.</dd>
     <dt><sup>2</sup>vintage</dt><dd>mot anglais signifiant ancien, d'époque</dd>
