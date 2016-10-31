@@ -23,7 +23,6 @@ $(document).ready(function() {
       }
     });
     $('#go-top').click(function(){
-      //$('#go-top').fadeOut();
       $("html, body").animate({ scrollTop: 0 }, 600);
       return false;
     });
