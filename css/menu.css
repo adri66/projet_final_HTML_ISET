@@ -1,4 +1,6 @@
 /* MENU */
+
+
 /* Grandement inspriré de : http://www.jqueryscript.net/menu/Minimalist-Dropdown-Navigation-Menu-Plugin-With-jQuery.html*/
 
 .menu-container {
@@ -8,11 +10,13 @@
     font-family: corbel;
     text-align: center;
 }
-ul.menu{
-  margin-top: 0;
-  margin-bottom: 0;
-  display: inline-block;
+
+ul.menu {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
 }
+
 ul.menu li {
     float: left;
     padding: 5px;
@@ -21,16 +25,21 @@ ul.menu li {
     height: 20px;
     text-align: left;
 }
+
 ul.menu li a {
     color: #fff;
     text-decoration: none;
 }
+
 ul.menu li:hover {
     color: #fff;
     text-decoration: none;
+    background-color: #0069BD;
 }
 
+
 /*element caché*/
+
 ul.menu ul {
     background: #0069BD;
     position: relative;
@@ -38,8 +47,10 @@ ul.menu ul {
     display: none;
     width: 70px;
     right: 15px;
-    margin-top: -13px; /*Colle le sous menu au menu*/
+    margin-top: -13px;
+    /*Colle le sous menu au menu*/
 }
+
 ul.menu ul li {
     float: none;
     position: relative;

@@ -35,10 +35,7 @@ header {
 
 .imageIntro:active {
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
     left: 0;
     right: 0;
     top: 0;
@@ -54,26 +51,34 @@ header {
     background-color: #008DFF;
     font-weight: bold;
 }
-dl{
-  background-color: #008DFF;
-  margin: 0px;
+
+dl {
+    background-color: #008DFF;
+    margin: 0px;
 }
-footer{
-  background-color: #0B45D4;
-  color: #4CAFFF;
-  text-align: center;
+
+footer {
+    background-color: #0B45D4;
+    color: #4CAFFF;
+    text-align: center;
 }
-#go-top{
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  bottom: 40px;
-  right: 10px;
-  display: none;
-  background-color: #002A7F;
-  border-radius: 5px;
-  opacity: 0.8;
-  text-align: center;
-  color: #4C88FF;
+
+#go-top-container {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    opacity: 1;
+    background-color: #002A7F;
+    border-radius: 20px 20px 5px 5px;
+    opacity: 0.8;
+    text-align: center;
+    color: #4C88FF;
+}
+
+#go-top {
+    display: inline-block;
+    padding-top: 10px;
 }
