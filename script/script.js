@@ -35,3 +35,22 @@ $(document).ready(function() {
     return false;
   });
 });
+
+
+var loadForm = function(){
+  $("#contact").guardian({
+  failure: function() {
+    $.sweetModal({
+      theme: $.sweetModal.THEME_DARK,
+      content: 'Il y a ' + this.getInvalid().length + ' erreurs !',
+      title: 'Erreur !',
+      icon: $.sweetModal.ICON_ERROR,
+
+      buttons: [{
+        label: 'Ok',
+        classes: 'redB'
+      }]
+    });
+  },
+});
+}

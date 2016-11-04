@@ -6,8 +6,11 @@
 
   <link rel="stylesheet" href="./css/stylSheet.css">
   <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/jquery.sweet-modal.min.css">
   <script type="text/javascript" src="./script/jquery.js"></script>
   <script type="text/javascript" src="./script/script.js"></script>
+  <script type="text/javascript" src="./script/jquery.guardian.js"></script>
+  <script type="text/javascript" src="./script/jquery.sweet-modal.min.js"></script>
 
   <title>DIYElectronics - Accueille</title>
 </head>
@@ -28,7 +31,7 @@
             <li><a href="#" onclick="$('#container').html('En cours de construction')">Arduino</a></li>
           </ul>
         </li>
-        <li><a href="#" onclick="$('#container').html('En cours de construction')">Contact</a></li>
+        <li><a href="#" onclick="$('#container').fadeOut(400, function(){$(this).load('./pages/form.html #container', loadForm).fadeIn()})">Contact</a></li>
       </ul>
     </nav>
     <noscript><strong><div style="color:yellow">VOTRE NAVIGATEUR NE SUPORTE PAS JAVASCRIPT !</div></strong></noscript>
