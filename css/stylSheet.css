@@ -63,40 +63,45 @@ footer {
     text-align: center;
 }
 
-.errorForm{
-  color: rgb(251, 153, 38);
+.errorForm {
+    color: rgb(251, 153, 38);
 }
-input,textarea{
+
+input, textarea {
     border-radius: 5px;
     background-color: rgba(32, 32, 32, 0.08);
     border-color: rgba(80, 80, 80, 0.63);
 }
-input:focus,textarea:focus{
-  box-shadow: 0px 0px 3px 3px rgba(91, 102, 153, 0.77);
-  -moz-box-shadow: 0px 0px 3px 3px rgba(91, 102, 153, 0.77);
-  -webkit-box-shadow: 0px 0px 3px 3px rgba(91, 102, 153, 0.77);
+
+input:focus, textarea:focus {
+    box-shadow: 0px 0px 3px 3px rgba(91, 102, 153, 0.77);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(91, 102, 153, 0.77);
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(91, 102, 153, 0.77);
 }
-.ui-state-valid>input,.ui-state-valid>textarea
-{
-  border-color: green;
-  background-color: rgba(164, 255, 173, 1);
-  background-image: url("./valid.png");
-  background-position: right;
-  background-repeat: no-repeat;
+
+.ui-state-valid>input, .ui-state-valid>textarea {
+    border-color: green;
+    background-color: rgba(164, 255, 173, 1);
+    background-image: url("./valid.png");
+    background-position: right;
+    background-repeat: no-repeat;
 }
-.ui-state-invalid>input,.ui-state-invalid>textarea{
-  border-color: red;
-  background-color: rgba(255, 0, 25, 0.1);
-  background-image: url("./invalid.png");
-  background-position: right;
-  background-repeat: no-repeat;
+
+.ui-state-invalid>input, .ui-state-invalid>textarea {
+    border-color: red;
+    background-color: rgba(255, 0, 25, 0.1);
+    background-image: url("./invalid.png");
+    background-position: right;
+    background-repeat: no-repeat;
 }
-.submit, .submit:focus{
-  background-color: rgb(228, 255, 96);
-  box-shadow: 0;
-  -moz-box-shadow: 0;
-  -webkit-box-shadow: 0;
+
+.submit, .submit:focus {
+    background-color: rgb(228, 255, 96);
+    box-shadow: 0;
+    -moz-box-shadow: 0;
+    -webkit-box-shadow: 0;
 }
+
 #go-top-container {
     display: inline-block;
     display: none;
@@ -117,7 +122,6 @@ input:focus,textarea:focus{
     padding-top: 10px;
 }
 
-.red
-{
-  color: red;
+.red {
+    color: red;
 }
