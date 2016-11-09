@@ -57,7 +57,5 @@ var loadForm = function() {
 
 /*-----GALERY------*/
 var loadGalery = function(){
-  $.ajax({url:"images/galery/",
-          success: function(){alert}
-  });
+
 }
