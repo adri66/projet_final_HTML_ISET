@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/stylSheet.css">
+  <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/jquery.sweet-modal.min.css">
+  <script type="text/javascript" src="../script/jquery.js"></script>
+  <script type="text/javascript" src="../script/script.js"></script>
+  <script type="text/javascript" src="../script/jquery.guardian.js"></script>
+  <script type="text/javascript" src="../script/jquery.sweet-modal.min.js"></script>
+
+  <title>DIYElectronics - Accueille</title>
+</head>
+
+<body>
+  <div class="main">
+    <header>
+      <div class="logo">DIYElectronics</div>
+    </header>
+    <nav class="menu-container">
+      <ul class="menu">
+        <li><a href="#accueile" onclick="$('#container').fadeOut(400, function(){$(this).load('../index.html #container').fadeIn()})">Accueil</a></li>
+        <li><a href="#projet" onclick="$('#container').fadeOut(400, function(){$(this).load('../pages/projet.html #container').fadeIn()})">Projet</a>
+          <ul>
+            <li><a href="#" onclick="$('#container').html('En cours de construction')">AVR-C</a></li>
+            <li><a href="#" onclick="$('#container').html('En cours de construction')">Electronic</a></li>
+            <li><a href="#" onclick="$('#container').html('En cours de construction')">Informatique</a></li>
+            <li><a href="#" onclick="$('#container').html('En cours de construction')">Arduino</a></li>
+          </ul>
+        </li>
+        <li><a href="#" onclick="">Galerie</a></li>
+        <li><a href="#" onclick="$('#container').fadeOut(400, function(){$(this).load('../pages/form.html #container', loadForm).fadeIn()})">Contact</a></li>
+      </ul>
+    </nav>
+    <noscript><strong><div style="color:yellow">VOTRE NAVIGATEUR NE SUPORTE PAS JAVASCRIPT !</div></strong></noscript>
+    <div id="container">
+      <img src="" id="view" />
+      <div class="galery">
+        <img src="" />
+      </div>
+      <script>$.ajax({url:"./images/galery/"}).done(function(html){
+        alert(html);
+      });</script>
+    </div>
+  </div>
+</body>
+</html>

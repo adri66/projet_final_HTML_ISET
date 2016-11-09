@@ -31,6 +31,7 @@
             <li><a href="#" onclick="$('#container').html('En cours de construction')">Arduino</a></li>
           </ul>
         </li>
+        <li><a href="#galery" onclick="$('#container').fadeOut(400, function(){$(this).load('./pages/galery.html #container', loadGalery).fadeIn()})">Galerie</a></li>
         <li><a href="#" onclick="$('#container').fadeOut(400, function(){$(this).load('./pages/form.html #container', loadForm).fadeIn()})">Contact</a></li>
       </ul>
     </nav>
