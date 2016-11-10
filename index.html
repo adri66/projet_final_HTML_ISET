@@ -22,7 +22,7 @@
     </header>
     <nav class="menu-container">
       <ul class="menu">
-        <li><a href="#accueile" onclick="$('#container').fadeOut(400, function(){$(this).load('./index.html #container').fadeIn()})">Accueil</a></li>
+        <li><a href="#accueile" onclick="$('#container').fadeOut(400, function(){$(this).load('./index.html #container',loadGalery).fadeIn()})">Accueil</a></li>
         <li><a href="#projet" onclick="$('#container').fadeOut(400, function(){$(this).load('./pages/projet.html #container').fadeIn()})">Projet</a>
           <ul>
             <li><a href="#" onclick="$('#container').html('En cours de construction')">AVR-C</a></li>
@@ -32,14 +32,15 @@
           </ul>
         </li>
         <li><a href="#galery" onclick="$('#container').fadeOut(400, function(){$(this).load('./pages/galery.html #container', loadGalery).fadeIn()})">Galerie</a></li>
-        <li><a href="#" onclick="$('#container').fadeOut(400, function(){$(this).load('./pages/form.html #container', loadForm).fadeIn()})">Contact</a></li>
+        <li><a href="#contact" onclick="$('#container').fadeOut(400, function(){$(this).load('./pages/form.html #container', loadForm).fadeIn()})">Contact</a></li>
       </ul>
     </nav>
     <noscript><strong><div style="color:yellow">VOTRE NAVIGATEUR NE SUPORTE PAS JAVASCRIPT !</div></strong></noscript>
+    <div id="viewContainer"><div id="view"><img src="./images/galery/Fyobyvo.png"/></div></div>
     <div id="container">
       <section class="intro">
         <div class="blockTitle">Description du site</div>
-        <p><img src="./images/nixie.jpg" class="imageIntro" title="Click long pour voir en grand" alt="Nixie clock" /> DIYElectronics est un site rédiger par des passioné d'élecronique et d'infomatique.<br /> On parlera sur se site de microcontroleur (ATMEGA328P,
+        <p><img src="./images/nixie.jpg" class="imageIntro" title="Click long pour voir en grand" alt="Nixie clock" onload="loadGalery"/> DIYElectronics est un site rédiger par des passioné d'élecronique et d'infomatique.<br /> On parlera sur se site de microcontroleur (ATMEGA328P,
           ATMEGA8, ...), d'arduino, de raspbery, etc Tous se qui touche de près ou de loins l'électronique et/ou l'informatique poura être vus.<br /> Si contre vous verrez un de nos projet, l'horloge a tube nixie !</p>
       </section>
       <section class="lastProject">

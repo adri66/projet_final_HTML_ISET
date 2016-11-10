@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$("#container").ready(function() {
   /*-----------MENU-----------*/
   $('ul.menu li:has(ul)').mouseenter(function() {
     $(this).find("ul").slideDown("fast");
@@ -11,13 +11,19 @@ $(document).ready(function() {
   var ancre = window.location.hash.substr(1);
   switch (ancre) {
     case 'accueil':
-      $('#container').load('./index.html #container');
+      $('#container').load('./index.html #container', loadGalery);
       break;
     case 'projet':
-      $('#container').load('./pages/projet.html #container');
+      $('#container').load('./pages/projet.html #container', loadGalery);
+      break;
+    case 'galery':
+      $('#container').load('./pages/galery.html #container', loadGalery);
+      break;
+    case 'contact':
+      $('#container').load('./pages/form.html #container', loadGalery);
       break;
     default:
-      $('#container').load('./index.html #container');
+      $('#container').load('./index.html #container', loadGalery);
   }
 
   /*-----------BOUTON TOP-----------*/
@@ -55,7 +61,14 @@ var loadForm = function() {
   });
 }
 
-/*-----GALERY------*/
 var loadGalery = function(){
-
+  $("img").ready(function(){
+    $("#viewContainer").click(function(){
+      $(this).fadeOut();
+    });
+    $("img").click(function(){
+      $("#view img").attr("src", $(this).attr("src"));
+      $("#viewContainer").fadeIn();
+    });
+  });
 }
