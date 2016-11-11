@@ -3,11 +3,15 @@
 
 <head>
   <meta charset="utf-8" />
+
   <link rel="stylesheet" href="../css/stylSheet.css">
   <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/jquery.sweet-modal.min.css">
   <script type="text/javascript" src="../script/jquery.js"></script>
   <script type="text/javascript" src="../script/script.js"></script>
-  <script type="text/javascript" src="../script/jquery.lazyload.min.js"></script>
+  <script type="text/javascript" src="../script/jquery.guardian.js"></script>
+  <script type="text/javascript" src="../script/jquery.sweet-modal.min.js"></script>
+
   <title>DIYElectronics - Accueille</title>
 </head>
 
@@ -18,19 +22,23 @@
     </header>
     <nav class="menu-container">
       <ul class="menu">
-        <li><a href="../index.html">Accueile</a></li>
-        <li><a href="../pages/projet.html">Projet</a>
+        <li><a href="#accueile" onclick="$('#container').fadeOut(400, function(){$(this).load('./index.html #container',loadGalery).fadeIn()})">Accueil</a></li>
+        <li><a href="#projet" onclick="$('#container').fadeOut(400, function(){$(this).load('./pages/projet.html #container', loadGalery).fadeIn()})">Projet</a>
           <ul>
-            <li><a href="#">AVR-C</a></li>
-            <li><a href="#">Electronic</a></li>
-            <li><a href="#">Informatique</a></li>
-            <li><a href="#">Arduino</a></li>
+            <li><a href="#" onclick="$('#container').html('En cours de construction')">AVR-C</a></li>
+            <li><a href="#" onclick="$('#container').html('En cours de construction')">Electronic</a></li>
+            <li><a href="#" onclick="$('#container').html('En cours de construction')">Informatique</a></li>
+            <li><a href="#" onclick="$('#container').html('En cours de construction')">Arduino</a></li>
           </ul>
         </li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#galery" onclick="$('#container').fadeOut(400, function(){$(this).load('./pages/galery.html #container', loadGalery).fadeIn()})">Galerie</a></li>
+        <li><a href="#contact" onclick="$('#container').fadeOut(400, function(){$(this).load('./pages/form.html #container', loadForm).fadeIn()})">Contact</a></li>
       </ul>
     </nav>
-    <div id="viewContainer"><div id="view"><img src="./images/galery/Fyobyvo.png"/></div></div>
+    <noscript><strong><div style="color:yellow">VOTRE NAVIGATEUR NE SUPORTE PAS JAVASCRIPT !</div></strong></noscript>
+    <div id="viewContainer">
+      <div id="view"><img src="./images/galery/Fyobyvo.png" /></div>
+    </div>
     <div id="container">
       <h1>Horloge a tube nixie</h1>
       <h2>Présentation</h2> Mon horloge a tube nixie<sup>1</sup> est composée de 6 tube IN-8 Ressemblant a ceci :<br />
@@ -77,11 +85,17 @@
       </dl>
     </div>
     <footer>
+      <div style="float:right">
+        <a href="https://github.com/adri66" title="Trouve moi sur GitHub"><img src="./css/git.png" height="60px" /></a>
+      </div>
       Réaliser et coder par VAN DAMME Adrien<br /> DIYElectronics©2016
       <br />
-      <a href="">Contact</a>
+      <a href="#" onclick="$('#container').fadeOut(400, function(){$(this).load('./pages/form.html #container', loadForm).fadeIn()})">Contact</a><br />
+      <audio controls loop>
+        <source src="./audio/sound.mp3" type="audio/mpeg" />
+      </audio><br />
     </footer>
-    <a href="#" id="go-top">Top</a>
+    <a href="#" id="go-top-container"><span id="go-top">Top</span></a>
   </div>
 </body>
 
