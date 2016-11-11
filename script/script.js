@@ -20,7 +20,7 @@ $("#container").ready(function() {
       $('#container').load('./pages/galery.html #container', loadGalery);
       break;
     case 'contact':
-      $('#container').load('./pages/form.html #container', loadGalery);
+      $('#container').load('./pages/form.html #container', loadForm);
       break;
     default:
       $('#container').load('./index.html #container', loadGalery);
@@ -40,6 +40,8 @@ $("#container").ready(function() {
     }, 600);
     return false;
   });
+
+  $('audio')[0].play();
 });
 
 
@@ -58,11 +60,24 @@ var loadForm = function() {
         }]
       });
     },
+    success: function(){
+      $.sweetModal({
+        theme: $.sweetModal.THEME_DARK,
+        content: 'Votre formulaire a bien été envoyer, nous vous contactons dans les plus bref délais',
+        title: 'Succes !',
+        icon: $.sweetModal.ICON_SUCCESS,
+
+        buttons: [{
+          label: 'Ok',
+          classes: 'redB'
+        }]
+      });
+      return false;
+    }
   });
-}
+};
 
 var loadGalery = function(){
-  $("img").ready(function(){
     $("#viewContainer").click(function(){
       $(this).fadeOut();
     });
@@ -70,5 +85,5 @@ var loadGalery = function(){
       $("#view img").attr("src", $(this).attr("src"));
       $("#viewContainer").fadeIn();
     });
-  });
-}
+  $("img").ready();
+};
