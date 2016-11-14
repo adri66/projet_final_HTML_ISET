@@ -44,7 +44,6 @@ $("#container").ready(function() {
   $('audio')[0].play();
 });
 
-
 var loadForm = function() {
   $("#contact").guardian({
     failure: function() {
@@ -85,5 +84,8 @@ var loadGalery = function(){
       $("#view img").attr("src", $(this).attr("src"));
       $("#viewContainer").fadeIn();
     });
-  $("img").ready();
+
+    $('video').click(function(){
+        $('audio')[0].pause();
+    });
 };
